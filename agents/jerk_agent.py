@@ -5,7 +5,7 @@ A scripted agent called "Just Enough Retained Knowledge".
 """
 
 import random
-
+import retro
 import gym
 import numpy as np
 
@@ -17,7 +17,7 @@ TOTAL_TIMESTEPS = int(1e6)
 
 def main():
     """Run JERK on the attached environment."""
-    env = grc.RemoteEnv('tmp/sock')
+    env = retro.make('SonicTheHedgehog-Genesis', 'GreenHillZone.Act3.state')
     env = TrackedEnv(env)
     new_ep = True
     solutions = []

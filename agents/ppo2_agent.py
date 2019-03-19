@@ -5,11 +5,12 @@ Train an agent on Sonic using PPO2 from OpenAI Baselines.
 """
 
 import tensorflow as tf
-
+import retro
 from baselines.common.vec_env.dummy_vec_env import DummyVecEnv
 import baselines.ppo2.ppo2 as ppo2
 import baselines.ppo2.policies as policies
-import gym_remote.exceptions as gre
+#import gym_remote.exceptions as gre
+import datetime
 
 from sonic_util import make_env
 
@@ -20,6 +21,9 @@ def main():
     with tf.Session(config=config):
         # Take more timesteps than we need to be sure that
         # we stop due to an exception.
+        print("starting learning...")
+        print (str(datetime.datetime.now()))
+
         ppo2.learn(policy=policies.CnnPolicy,
                    env=DummyVecEnv([make_env]),
                    nsteps=4096,
@@ -32,9 +36,11 @@ def main():
                    lr=lambda _: 2e-4,
                    cliprange=lambda _: 0.1,
                    total_timesteps=int(1e7))
+        print("finished learning...")
+        print (str(datetime.datetime.now()))
 
 if __name__ == '__main__':
     try:
         main()
-    except gre.GymRemoteError as exc:
-        print('exception', exc)
+    except:
+        print('exception')

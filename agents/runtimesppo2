@@ -1,0 +1,59 @@
+--------------------------------------
+| approxkl           | 0.0024739003  |
+| clipfrac           | 0.13834636    |
+| eplenmean          | nan           |
+| eprewmean          | nan           |
+| explained_variance | -1.32         |
+| fps                | 250           |
+| nupdates           | 2441          |
+| policy_entropy     | 1.7294307     |
+| policy_loss        | -0.0094344625 |
+| serial_timesteps   | 9998336       |
+| time_elapsed       | 4.04e+04      |
+| total_timesteps    | 9998336       |
+| value_loss         | 8.111873e-09  |
+--------------------------------------
+2019-03-12 07:02:08.000465
+--------------------------------------
+| approxkl           | 0.0020265465  |
+| clipfrac           | 0.11263021    |
+| eplenmean          | nan           |
+| eprewmean          | nan           |
+| explained_variance | -1.21         |
+| fps                | 250           |
+| nupdates           | 2441          |
+| policy_entropy     | 1.7854213     |
+| policy_loss        | -0.0064783073 |
+| serial_timesteps   | 9998336       |
+| time_elapsed       | 4.04e+04      |
+| total_timesteps    | 9998336       |
+| value_loss         | 4.6438727e-06 |
+--------------------------------------
+
+Run 3
+
+
+2019-03-12 11:21:02.747976
+2019-03-12 22:33:52.258304
+-------------------------------------
+| approxkl           | 0.001096839  |
+| clipfrac           | 0.040771484  |
+| eplenmean          | nan          |
+| eprewmean          | nan          |
+| explained_variance | 0.0269       |
+| fps                | 247          |
+| nupdates           | 2441         |
+| policy_entropy     | 1.811067     |
+| policy_loss        | -0.005915219 |
+| serial_timesteps   | 9998336      |
+| time_elapsed       | 4.04e+04     |
+| total_timesteps    | 9998336      |
+| value_loss         | 0.0019381015 |
+-------------------------------------
+
+Runtime Rainbow:
+
+starting training...
+2019-03-12 22:53:15.781910
+finished training...
+2019-03-13 22:44:53.361329
